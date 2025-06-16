@@ -1,0 +1,127 @@
+/* Fondo general y borde LED animado */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+  min-height: 100vh;
+  border: 10px solid;
+  border-image: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red) 1;
+  animation: border-anim 10s linear infinite;
+  box-sizing: border-box;
+  padding-top: 70px; /* espacio para el menú fijo */
+}
+
+/* Títulos */
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Párrafos */
+p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 20px auto;
+  max-width: 900px;
+  color: #ccc;
+}
+
+/* Listas */
+ul {
+  list-style-type: square;
+  color: cyan;
+  font-size: 18px;
+  margin: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+/* Enlaces */
+a {
+  color: #0ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #0ff;
+}
+
+/* Imágenes con borde LED */
+img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border: 6px solid;
+  border-image: linear-gradient(270deg, red, yellow, lime, cyan, blue, violet, red) 1;
+  animation: border-anim 8s linear infinite;
+  border-radius: 12px;
+}
+
+/* Videos con borde LED */
+video {
+  display: block;
+  margin: 30px auto;
+  max-width: 90%;
+  border: 6px solid;
+  border-image: linear-gradient(270deg, cyan, magenta, yellow, cyan) 1;
+  animation: border-anim 10s linear infinite;
+  border-radius: 12px;
+}
+
+/* Animación LED para bordes */
+@keyframes border-anim {
+  0% {
+    border-image-source: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
+  }
+  25% {
+    border-image-source: linear-gradient(270deg, blue, cyan, green, lime, yellow, red, violet, blue);
+  }
+  50% {
+    border-image-source: linear-gradient(270deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  }
+  75% {
+    border-image-source: linear-gradient(270deg, lime, yellow, orange, red, violet, blue, cyan, lime);
+  }
+  100% {
+    border-image-source: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
+  }
+}
+
+/* Menú de navegación fijo con estilo LED */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(270deg, red, yellow, lime, cyan, blue, violet, red) 1;
+  animation: border-anim 8s linear infinite;
+  z-index: 1000;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+nav a:hover {
+  background-color: #111;
+  border: 2px solid cyan;
+  text-shadow: 0 0 10px cyan;
+}
