@@ -126,7 +126,6 @@
             flex-wrap: wrap;
         }
         #aplicaciones .logos img {
-            /* REEMPLAZA [TU_USUARIO_GITHUB_EXACTO] CON EL TUYO, Y ASEGÚRATE QUE ESTOS LOGOS ESTÁN EN LA RAÍZ */
             width: 180px;
             height: auto;
             border-radius: 15px;
@@ -158,8 +157,8 @@
         }
         /* Genially Section */
         #genially {
-            /* REEMPLAZA [TU_USUARIO_GITHUB_EXACTO] CON EL TUYO, Y ASEGÚRATE QUE logo-genially.png ESTÁ EN LA RAÍZ */
-            background-image: url("https://raw.githubusercontent.com/[TU_USUARIO_GITHUB_EXACTO]/giolveraolvera1311/main/logo-genially.png");
+            /* Ruta de fondo, asegurando que logo-genially.png esté en la raíz del repositorio */
+            background-image: url("https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/logo-genially.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -246,9 +245,9 @@
             Este proyecto tiene como objetivo mostrar el uso de tres poderosas herramientas tecnológicas que han revolucionado la forma de presentar información: Canva, Mentimeter y Genially.
         </p>
         <div class="logos">
-            <img src="https://raw.githubusercontent.com/[TU_USUARIO_GITHUB_EXACTO]/giolveraolvera1311/main/logo-canva.png" alt="Logo de Canva">
-            <img src="https://raw.githubusercontent.com/[TU_USUARIO_GITHUB_EXACTTO]/giolveraolvera1311/main/logo-mentimeter.png" alt="Logo de Mentimeter">
-            <img src="https://raw.githubusercontent.com/[TU_USUARIO_GITHUB_EXACTO]/giolveraolvera1311/main/logo-genially.png" alt="Logo de Genially">
+            <img src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/logo-canva.png" alt="Logo de Canva">
+            <img src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/logo-mentimeter.png" alt="Logo de Mentimeter">
+            <img src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/logo-genially.png" alt="Logo de Genially">
         </div>
     </div>
     <div id="canva" class="content-section">
@@ -256,9 +255,9 @@
         <p>Canva es una plataforma de diseño gráfico en línea que permite crear contenidos visuales de manera sencilla. Desde presentaciones hasta carteles y posts para redes sociales.</p>
         <h2>¿Para qué sirve?</h2>
         <p>Permite a cualquier persona sin conocimientos de diseño crear material visual profesional con plantillas prediseñadas.</p>
-        <img src="https://raw.githubusercontent.com/[TU_USUARIO_GITHUB_EXACTO]/giolveraolvera1311/main/canva-ejemplo.png" alt="Ejemplo de Canva">
+        <img src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/canva-ejemplo.png" alt="Ejemplo de Canva">
         <video controls>
-            <source src="https://raw.githubusercontent.com/[TU_USUARIO_GITHUB_EXACTO]/giolveraolvera1311/main/canva-video.mp4" type="video/mp4">
+            <source src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/canva-video.mp4" type="video/mp4">
             Tu navegador no soporta el video.
         </video>
     </div>
@@ -267,9 +266,9 @@
         <p>Mentimeter es una herramienta en línea que permite realizar presentaciones interactivas con encuestas, nubes de palabras, cuestionarios y más.</p>
         <h2>¿Para qué sirve?</h2>
         <p>Para interactuar con una audiencia en tiempo real y obtener retroalimentación inmediata.</p>
-        <img src="https://raw.githubusercontent.com/[TU_USUARIO_GITHUB_EXACTO]/giolveraolvera1311/main/mentimeter-ejemplo.png" alt="Ejemplo de Mentimeter">
+        <img src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/mentimeter-ejemplo.png" alt="Ejemplo de Mentimeter">
         <video controls>
-            <source src="https://raw.githubusercontent.com/[TU_USUARIO_GITHUB_EXACTO]/giolveraolvera1311/main/mentimeter-video.mp4" type="video/mp4">
+            <source src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/mentimeter-video.mp4" type="video/mp4">
             Tu navegador no soporta el video.
         </video>
     </div>
@@ -282,9 +281,9 @@
         <p>
             Comunica información de forma atractiva e interactiva para educación y marketing.
         </p>
-        <img src="https://raw.githubusercontent.com/[TU_USUARIO_GITHUB_EXACTO]/giolveraolvera1311/main/genially-ejemplo.png" alt="Presentación interactiva de Genially">
+        <img src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/genially-ejemplo.png" alt="Presentación interactiva de Genially">
         <video controls>
-            <source src="https://raw.githubusercontent.com/[TU_USUARIO_GITHUB_EXACTO]/giolveraolvera1311/main/genially-video.mp4" type="video/mp4">
+            <source src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/genially-video.mp4" type="video/mp4">
             Tu navegador no soporta el video.
         </video>
         <h2>¿Quién lo creó?</h2>
