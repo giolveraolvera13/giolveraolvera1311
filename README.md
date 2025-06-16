@@ -10,7 +10,8 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden;
+            scroll-behavior: smooth;
         }
         /* Navigation Styles */
         .navbar {
@@ -37,9 +38,9 @@
         }
         /* Section Base Styles */
         .content-section {
-            display: none; /* Hidden by default */
-            padding: 40px;
-            min-height: calc(100vh - 60px); /* Adjust based on navbar height */
+            display: none;
+            padding: 40px 20px;
+            min-height: calc(100vh - 60px);
             box-sizing: border-box;
             color: white;
             text-align: center;
@@ -47,20 +48,29 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+        }
+        .content-section.active {
+            opacity: 1;
         }
         .content-section h1, .content-section h2 {
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
         .content-section p {
             margin: 10px 0;
             line-height: 1.6;
+            max-width: 900px;
+            padding: 0 15px;
         }
         .content-section img, .content-section video {
             max-width: 90%;
             height: auto;
             border-radius: 10px;
-            margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin: 25px 0;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            object-fit: contain;
         }
         /* Portada Section */
         #portada {
@@ -91,6 +101,7 @@
             font-weight: bold;
             transition: background 0.3s;
             font-size: 1.1em;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
         #portada .boton a:hover {
             background-color: #00b4cc;
@@ -106,14 +117,13 @@
         #aplicaciones p, #aplicaciones ul {
             color: #cc66cc;
             font-size: 1.3em;
-            max-width: 800px;
         }
         #aplicaciones .logos {
             display: flex;
             justify-content: center;
             gap: 40px;
             margin-top: 30px;
-            flex-wrap: wrap; /* Allow logos to wrap */
+            flex-wrap: wrap;
         }
         #aplicaciones .logos img {
             width: 180px;
@@ -152,7 +162,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* Make text more readable on background image */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
         }
         #genially h1 {
             color: #00b4d8;
@@ -163,8 +173,8 @@
             font-size: 2em;
         }
         #genially p {
-            background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background for readability */
-            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
             border-radius: 8px;
             max-width: 900px;
             margin: 10px auto;
@@ -181,11 +191,17 @@
                 width: 120px;
             }
             .content-section {
-                padding: 20px;
+                padding: 20px 15px;
             }
             .navbar a {
                 padding: 8px 15px;
-                margin: 0 2px;
+                font-size: 0.9em;
+            }
+            h1 {
+                font-size: 2em !important;
+            }
+            h2 {
+                font-size: 1.5em !important;
             }
         }
         @media (max-width: 480px) {
@@ -215,7 +231,7 @@
         <a href="#mentimeter" class="nav-link" data-section="mentimeter">Mentimeter</a>
         <a href="#genially" class="nav-link" data-section="genially">Genially</a>
     </div>
-    <div id="portada" class="content-section" style="display: flex;">
+    <div id="portada" class="content-section active">
         <h1>Final de Cultura Digital II</h1>
         <p><strong>Nombre del alumno:</strong> GIOVANNA OLVERA OLVERA</p>
         <p><strong>Nombre del docente:</strong> MARTINEZ PATATUCHI AHIEZER</p>
@@ -283,8 +299,14 @@
             function showSection(sectionId) {
                 contentSections.forEach(section => {
                     section.style.display = 'none';
+                    section.classList.remove('active');
                 });
-                document.getElementById(sectionId).style.display = 'flex'; // Use flex for centering content
+                const targetSection = document.getElementById(sectionId);
+                if (targetSection) {
+                    targetSection.style.display = 'flex';
+                    void targetSection.offsetWidth;
+                    targetSection.classList.add('active');
+                }
             }
             function setActiveLink(activeSectionId) {
                 navLinks.forEach(link => {
@@ -300,22 +322,18 @@
                     const targetSectionId = this.dataset.section;
                     showSection(targetSectionId);
                     setActiveLink(targetSectionId);
-                    // Update URL hash without page reload for direct linking
                     history.pushState(null, '', `#${targetSectionId}`);
                 });
             });
-            // Handle initial load based on URL hash
             const initialHash = window.location.hash.substring(1);
             if (initialHash && document.getElementById(initialHash)) {
                 showSection(initialHash);
                 setActiveLink(initialHash);
             } else {
-                // Default to 'portada' if no hash or invalid hash
                 showSection('portada');
                 setActiveLink('portada');
             }
         });
     </script>
-
 </body>
 </html>
