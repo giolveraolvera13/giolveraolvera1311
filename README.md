@@ -121,9 +121,9 @@
   </p>
 
   <div class="logos">
-    <img src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/imagenes/logo-canva.png" alt="Logo de Canva">
-    <img src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/imagenes/logo-mentimeter.png" alt="Logo de Mentimeter">
-    <img src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/imagenes/logo-genially.png" alt="Logo de Genially">
+    <img src="https://raw.githubusercontent.com/giolveraolvera1311/giolveraolvera1311/main/imagenes/logo-canva.png" alt="Logo de Canva">
+    <img src="https://raw.githubusercontent.com/giolveraolvera1311/giolveraolvera1311/main/imagenes/logo-mentimeter.png" alt="Logo de Mentimeter">
+    <img src="https://raw.githubusercontent.com/giolveraolvera1311/giolveraolvera1311/main/imagenes/logo-genially.png" alt="Logo de Genially">
   </div>
 
   <nav>
@@ -174,10 +174,10 @@
   <h2>¿Para qué sirve?</h2>
   <p>Permite a cualquier persona sin conocimientos de diseño crear material visual profesional con plantillas prediseñadas.</p>
 
-  <img src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/imagenes/canva-ejemplo.png" alt="Ejemplo de Canva">
+  <img src="https://raw.githubusercontent.com/giolveraolvera1311/giolveraolvera1311/main/imagenes/canva-ejemplo.png" alt="Ejemplo de Canva">
 
   <video controls>
-    <source src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/imagenes/canva-video.mp4" type="video/mp4">
+    <source src="https://raw.githubusercontent.com/giolveraolvera1311/giolveraolvera1311/main/imagenes/canva-video.mp4" type="video/mp4">
     Tu navegador no soporta el video.
   </video>
 
@@ -223,10 +223,10 @@
   <h2>¿Para qué sirve?</h2>
   <p>Para interactuar con una audiencia en tiempo real y obtener retroalimentación inmediata.</p>
 
-  <img src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/imagenes/mentimeter-ejemplo.png" alt="Ejemplo de Mentimeter">
+  <img src="https://raw.githubusercontent.com/giolveraolvera1311/giolveraolvera1311/main/imagenes/mentimeter-ejemplo.png" alt="Ejemplo de Mentimeter">
 
   <video controls>
-    <source src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/imagenes/mentimeter-video.mp4" type="video/mp4">
+    <source src="https://raw.githubusercontent.com/giolveraolvera1311/giolveraolvera1311/main/imagenes/mentimeter-video.mp4" type="video/mp4">
     Tu navegador no soporta el video.
   </video>
 
@@ -240,7 +240,7 @@
   <title>Genially</title>
   <style>
     body {
-      background-image: url("https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/imagenes/logo-genially.png");
+      background-image: url("https://raw.githubusercontent.com/giolveraolvera1311/giolveraolvera1311/main/imagenes/logo-genially.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -298,10 +298,10 @@
   Comunica información de forma atractiva e interactiva para educación y marketing.
 </p>
 
-<img src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/imagenes/genially-ejemplo.png" alt="Presentación interactiva de Genially">
+<img src="https://raw.githubusercontent.com/giolveraolvera1311/giolveraolvera1311/main/imagenes/genially-ejemplo.png" alt="Presentación interactiva de Genially">
 
 <video controls>
-  <source src="https://raw.githubusercontent.com/giolveraolvera13/giolveraolvera1311/main/imagenes/genially-video.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/giolveraolvera1311/giolveraolvera1311/main/imagenes/genially-video.mp4" type="video/mp4">
   Tu navegador no soporta el video.
 </video>
 
